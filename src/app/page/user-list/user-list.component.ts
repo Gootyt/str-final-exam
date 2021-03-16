@@ -29,7 +29,7 @@ export class UserListComponent implements OnInit {
 
   confirmDelete(user: User): void {
     this.user = user;
-    $('#confirmationDialog').on('shown.bs.modal', function () {
+    $('#confirmModal').on('shown.bs.modal', function () {
       $('#cancelButton').trigger('focus')
     })
   }
